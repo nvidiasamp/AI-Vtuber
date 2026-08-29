@@ -1,0 +1,8 @@
+services:
+  aituber-rag-gateway:
+    build: .
+    container_name: aituber-rag-gateway
+    network_mode: host
+    env_file:
+      - .env
+    restart: unless-stopped
